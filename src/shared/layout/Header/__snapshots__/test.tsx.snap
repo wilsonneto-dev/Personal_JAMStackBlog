@@ -2,7 +2,7 @@
 
 exports[`<Header /> should render the heading 1`] = `
 .c0 {
-  height: 8em;
+  height: 8rem;
   background-color: #612F74;
 }
 
@@ -23,22 +23,13 @@ exports[`<Header /> should render the heading 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: min(100em,100%);
-  padding: 0 1em;
+  padding: 0 1rem;
   margin: 0 auto;
   height: 100%;
 }
 
 .c2 {
-  height: 40px;
-}
-
-.c3 {
-  display: inline-block;
-}
-
-.c3 img {
-  height: 1.6em;
-  margin-left: 0.5em;
+  height: 4rem;
 }
 
 <header
@@ -52,33 +43,14 @@ exports[`<Header /> should render the heading 1`] = `
         href="/"
       >
         <img
+          alt="Logo Wilson Neto"
           class="c2"
+          role="logo"
           src="/img/wilsonneto.png"
         />
       </a>
     </div>
-    <div>
-      <a
-        class="c3"
-        href="/"
-        target="_blank"
-      >
-        <img
-          alt="Wilson Neto - Github"
-          src="/img/ic-github.svg"
-        />
-      </a>
-      <a
-        class="c3"
-        href="/"
-        target="_blank"
-      >
-        <img
-          alt="Wilson Neto - Linkedin"
-          src="/img/ic-linkedin.svg"
-        />
-      </a>
-    </div>
+    <div />
   </div>
 </header>
 `;

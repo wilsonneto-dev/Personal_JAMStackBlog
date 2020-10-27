@@ -1,5 +1,5 @@
-import Main from 'shared/components/Main'
+import Main from 'shared/components/Main';
 
 export default function Home() {
-  return <Main />
+  return <Main />;
 }

@@ -9,6 +9,7 @@
     "export": "next export",
     "lint": "eslint src --max-warnings=0",
     "test": "jest --bail --verbose",
+    "test-snapshots": "jest --bail --verbose --updateSnapshot",
     "test:watch": "jest --watch",
     "generate": "plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
@@ -21,8 +22,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "npm run lint -- --fix",
+      "npm run test -- --findRelatedTests"
     ]
   },
   "dependencies": {

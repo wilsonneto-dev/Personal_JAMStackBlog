@@ -1,15 +1,16 @@
 import { screen } from '@testing-library/react';
-
 import { renderWithTheme } from '../../../../.jest/test-utils';
 import Header from '.';
+// import { getByRole } from '@testing-library/react';
 
 describe('<Header />', () => {
-  // ve renderizar o logo com um link
-  // deve renderizar os icones de redes sociais com links
+  it('should render the logo', () => {
+    renderWithTheme(<Header />);
+    expect(screen.getByRole('logo')).toBeInTheDocument();
+  });
 
-  it('should render the heading', () => {
-    const { container } = renderWithTheme(<Header />);
-
-    expect(container.firstChild).toMatchSnapshot();
+  it('should render social links', () => {
+    renderWithTheme(<Header />);
+    expect(screen.getAllByRole('social-link').length).toBeGreaterThan(0);
   });
 });

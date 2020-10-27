@@ -1,7 +1,10 @@
-import { AppProps } from 'next/app'
-import Head from 'next/head'
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
 
-import GlobalStyles from 'styles/global'
+import DefaultLayout from 'shared/layout/Default';
+import GlobalStyles from 'styles/global';
+import theme from 'styles/themes/default';
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,9 +20,13 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

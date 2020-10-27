@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render the heading 1`] = `
+.c0 {
+  height: 8em;
+  background-color: #612F74;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: min(100em,100%);
+  padding: 0 1em;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.c2 {
+  height: 40px;
+}
+
+.c3 {
+  display: inline-block;
+}
+
+.c3 img {
+  height: 1.6em;
+  margin-left: 0.5em;
+}
+
+<header
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div>
+      <a
+        href="/"
+      >
+        <img
+          class="c2"
+          src="/img/wilsonneto.png"
+        />
+      </a>
+    </div>
+    <div>
+      <a
+        class="c3"
+        href="/"
+        target="_blank"
+      >
+        <img
+          alt="Wilson Neto - Github"
+          src="/img/ic-github.svg"
+        />
+      </a>
+      <a
+        class="c3"
+        href="/"
+        target="_blank"
+      >
+        <img
+          alt="Wilson Neto - Linkedin"
+          src="/img/ic-linkedin.svg"
+        />
+      </a>
+    </div>
+  </div>
+</header>
+`;

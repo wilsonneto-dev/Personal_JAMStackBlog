@@ -6,29 +6,34 @@ module.exports = (plop) => {
         type: 'input',
         name: 'name',
         message: 'What is your component name?'
+      },
+      {
+        type: 'input',
+        name: 'folder',
+        message: 'What is your component destiny folder?'
       }
     ],
     actions: [
       {
         type: 'add',
-        path: '../src/shared/components/{{pascalCase name}}/index.tsx',
+        path: '../src/shared/{{folder}}/{{pascalCase name}}/index.tsx',
         templateFile: 'templates/components/Component.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/shared/components/{{pascalCase name}}/styles.ts',
+        path: '../src/shared/{{folder}}/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/components/styles.ts.hbs'
       },
       {
         type: 'add',
-        path: '../src/shared/components/{{pascalCase name}}/stories.tsx',
+        path: '../src/shared/{{folder}}/{{pascalCase name}}/stories.tsx',
         templateFile: 'templates/components/stories.tsx.hbs'
       },
       {
         type: 'add',
-        path: '../src/shared/components/{{pascalCase name}}/test.tsx',
+        path: '../src/shared/{{folder}}/{{pascalCase name}}/test.tsx',
         templateFile: 'templates/components/test.tsx.hbs'
       }
     ]
-  })
-}
+  });
+};

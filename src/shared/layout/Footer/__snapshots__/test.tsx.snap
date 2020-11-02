@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should looks like the snapshot 1`] = `
+.c0 {
+  background-color: #612F74;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: min(100em,100%);
+  padding: 6rem 0 8rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.c2 {
+  height: 4rem;
+}
+
+.c3 {
+  margin-top: 1rem;
+}
+
+.c4 {
+  display: inline-block;
+}
+
+.c4 img {
+  height: 1.6rem;
+  margin-left: 0.5rem;
+}
+
+<footer
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div>
+      <a
+        href="/"
+      >
+        <img
+          alt="Logo Wilson Neto"
+          class="c2"
+          role="logo"
+          src="/img/wilsonneto.png"
+        />
+      </a>
+    </div>
+    <div
+      class="c3"
+    >
+      <a
+        class="c4"
+        href="/"
+        role="social-link"
+        target="_blank"
+      >
+        <img
+          alt="Wilson Neto - Github"
+          src="/img/ic-github.svg"
+        />
+      </a>
+      <a
+        class="c4"
+        href="/"
+        role="social-link"
+        target="_blank"
+      >
+        <img
+          alt="Wilson Neto - Linkedin"
+          src="/img/ic-linkedin.svg"
+        />
+      </a>
+    </div>
+  </div>
+</footer>
+`;

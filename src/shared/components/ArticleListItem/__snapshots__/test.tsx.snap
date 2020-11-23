@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleListItem /> should match the snapshot 1`] = `
+.c0 {
+  font-family: 'Roboto',sans-serif;
+  width: 33%;
+  min-width: 25rem;
+  max-width: 35rem;
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.c0 header img {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0.5rem;
+  border-radius: 5px;
+}
+
+.c0 header h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  color: #4e5256;
+}
+
+.c0:hover header h1 {
+  color: #612F74;
+}
+
+.c0 p {
+  color: #909498;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.c0 footer {
+  color: #909498;
+  font-size: 1.5rem;
+}
+
+.c0 footer strong {
+  color: #4e5256;
+}
+
+@media (max-width:800px) {
+  .c0 {
+    width: 50%;
+    max-width: unset;
+  }
+}
+
+@media (max-width:600px) {
+  .c0 {
+    width: 100%;
+    margin: 0 auto 4rem auto;
+    max-width: 35rem;
+  }
+}
+
+<article
+  class="c0"
+>
+  <header>
+    <a
+      href="/articles/react/test01"
+    >
+      <img
+        src="/img/350x160.png"
+      />
+    </a>
+    <a
+      href="/articles/react/test01"
+    >
+      <h1>
+        Atualização aplicações React Native para a última versao
+      </h1>
+    </a>
+  </header>
+  <p>
+    <a
+      href="/articles/react/test01"
+    >
+      Atualização aplicações React Native para a última versao Atualização aplicações React Atualização aplicações React Native para a última versao Atualização aplicações React
+    </a>
+  </p>
+  <footer>
+    Por 
+    <strong>
+      Wilson Neto
+    </strong>
+     em
+     
+    <time
+      datetime="2020-11-01 20:00"
+    >
+      01/11/2020
+    </time>
+  </footer>
+</article>
+`;

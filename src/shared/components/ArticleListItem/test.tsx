@@ -16,12 +16,22 @@ const exampleData: IArticleListItem = {
 };
 
 describe('<ArticleListItem />', () => {
-  it('should render the heading', () => {
-    const { container } = renderWithTheme(<ArticleListItem {...exampleData} />);
+  it('should render the heading, text and footer', () => {
+    renderWithTheme(<ArticleListItem {...exampleData} />);
 
-    expect(screen.getByText('teste de artigo 01')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        'Atualização aplicações React Native para a última versao'
+      )
+    ).toBeInTheDocument();
+
     expect(screen.getByRole('heading')).toBeInTheDocument();
+    expect(screen.getAllByRole('link').length).toBeGreaterThan(0);
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
+  });
 
+  it('should match the snapshot', () => {
+    const { container } = renderWithTheme(<ArticleListItem {...exampleData} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

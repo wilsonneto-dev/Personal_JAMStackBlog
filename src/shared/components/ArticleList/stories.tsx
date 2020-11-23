@@ -1,20 +1,31 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+import React, { Fragment } from 'react';
 import ArticleList from '.';
 import ArticleListItem from '../ArticleListItem';
+
+import { fakeData } from './fakeData';
 
 export default {
   title: 'Articles/ArticleList',
   component: ArticleList
 } as Meta;
 
-export const ListWithItems = () => <ArticleListItem />;
+export const Default = () => (
+  <ArticleList>
+    {fakeData.map((article) => (
+      <Fragment key={article.id}>
+        <ArticleListItem {...article} />
+      </Fragment>
+    ))}
+  </ArticleList>
+);
 
-Default.args = {
-  thumbURL: '/img/article-thumb.png',
-  title: 'Atualização aplicações React Native para a última versao',
-  description:
-    'Atualização aplicações React Native para a última versao Atualização aplicações React',
-  author: 'Wilson Neto',
-  datetime: '2020-11-01 20:00',
-  datetext: '01/11/2020'
-};
+export const WithOneItem = () => (
+  <ArticleList>
+    {fakeData.slice(0, 1).map((article) => (
+      <Fragment key={article.id}>
+        <ArticleListItem {...article} />
+      </Fragment>
+    ))}
+  </ArticleList>
+);

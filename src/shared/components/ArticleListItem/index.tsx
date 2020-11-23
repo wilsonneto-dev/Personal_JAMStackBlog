@@ -1,16 +1,12 @@
 import Link from 'next/link';
-import { title } from 'process';
-import { Description } from '../Main/styles';
+import IArticle from 'models/interfaces/IArticle';
+
 import * as S from './styles';
 
-export interface IArticleListItem {
-  thumbURL: string;
-  title: string;
-  description: string;
-  author: string;
-  datetime: string;
-  datetext: string;
-}
+export type IArticleListItem = Pick<
+  IArticle,
+  'thumbURL' | 'title' | 'description' | 'author' | 'datetime' | 'datetext'
+>;
 
 const ArticleListItem = ({
   thumbURL,

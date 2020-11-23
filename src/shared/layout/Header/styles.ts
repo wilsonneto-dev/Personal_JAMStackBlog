@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.header`
   height: 8rem;
-  background-color: ${(props) => props.theme.colors.featuredBackground};
+  background-color: ${({ theme }) => theme.colors.featuredBackground};
 `;
 
 export const InnerWrapper = styled.div`

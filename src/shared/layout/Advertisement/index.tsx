@@ -1,8 +1,15 @@
 import * as S from './styles';
 
-const Advertisement = () => (
+interface IAdvertisementProps {
+  text?: string;
+}
+
+const Advertisement = ({ text }: IAdvertisementProps) => (
   <S.Wrapper>
-    <h1>Advertisement</h1>
+    <p>
+      {text ||
+        'Caso tenha alguma dúvida ou sugestão para um vídeo ou um artigo: contato@wilsonneto.com.br'}
+    </p>
   </S.Wrapper>
 );
 

@@ -3,8 +3,8 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/shared/**/**.ts(x)?',
-    'src/pages/**/**.ts(x)?',
+    'src/ui/**/**.ts(x)?',
+    'src/ui/pages/**/**.ts(x)?',
     'src/hooks/**/**.ts(x)?',
 
     '!src/pages/index.tsx',
@@ -18,4 +18,4 @@ module.exports = {
     '^styled-components':
       '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
   }
-}
+};

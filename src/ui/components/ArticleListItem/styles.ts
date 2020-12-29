@@ -4,17 +4,13 @@ export const Wrapper = styled.div``;
 
 export const Article = styled.article`
   font-family: 'Roboto', sans-serif;
-  width: 33%;
+  width: 100%;
   min-width: 25rem;
   max-width: 35rem;
   display: inline-block;
   padding: 0 0.5rem;
+  margin: 0 auto;
   margin-bottom: 4rem;
-
-  @media (max-width: 800px) {
-    width: 50%;
-    max-width: unset;
-  }
 
   @media (max-width: 600px) {
     width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from 'shared/layout/Header';
-import Footer from 'shared/layout/Footer';
-import Advertisement from 'shared/layout/Advertisement';
+import Header from 'ui/layout/Header';
+import Footer from 'ui/layout/Footer';
+import Advertisement from 'ui/layout/Advertisement';
 
 const Default: React.FC = ({ children }) => (
   <>

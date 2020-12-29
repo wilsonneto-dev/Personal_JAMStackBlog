@@ -1,4 +1,4 @@
-export default interface IArticle {
+interface IArticle {
   title: string;
   description: string;
   markdown: string;
@@ -7,3 +7,5 @@ export default interface IArticle {
   datetime: string;
   datetext: string;
 }
+
+export default IArticle;

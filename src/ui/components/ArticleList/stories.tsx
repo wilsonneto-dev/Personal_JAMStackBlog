@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0';
 import React, { Fragment } from 'react';
 import ArticleList from '.';
 import ArticleListItem from '../ArticleListItem';

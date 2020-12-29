@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 
-import DefaultLayout from 'shared/layout/Default';
+import DefaultLayout from 'ui/layout/Default';
 import GlobalStyles from 'styles/global';
 import theme from 'styles/themes/default';
 

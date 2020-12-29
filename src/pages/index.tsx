@@ -1,17 +1,5 @@
-import { Fragment } from 'react';
+import Home from 'ui/pages/home';
 
-import ArticleList from 'shared/components/ArticleList';
-import ArticleListItem from 'shared/components/ArticleListItem';
-import { fakeData } from 'shared/components/ArticleList/fakeData';
+const HomePage = () => <Home />;
 
-export default function Home() {
-  return (
-    <ArticleList>
-      {fakeData.map((article) => (
-        <Fragment key={article.id}>
-          <ArticleListItem {...article} />
-        </Fragment>
-      ))}
-    </ArticleList>
-  );
-}
+export default HomePage;

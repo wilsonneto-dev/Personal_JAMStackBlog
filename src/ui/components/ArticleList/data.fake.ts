@@ -1,7 +1,7 @@
 export const fakeData = [
   {
     id: 1,
-    thumbURL: '/img/350x160.png',
+    thumbURL: 'https://source.unsplash.com/random/350x160',
     title: 'Atualização aplicações React Native para a última versao',
     description:
       'Atualização aplicações React Native para a última versao Atualização aplicações React Atualização aplicações React Native para a última versao Atualização aplicações React',
@@ -11,7 +11,7 @@ export const fakeData = [
   },
   {
     id: 2,
-    thumbURL: '/img/350x160.png',
+    thumbURL: 'https://source.unsplash.com/random/350x160',
     title: 'Atualização aplicações React Native para a última versao',
     description:
       'Atualização aplicações React Native para a última versao Atualização aplicações React',
@@ -21,7 +21,7 @@ export const fakeData = [
   },
   {
     id: 3,
-    thumbURL: '/img/350x160.png',
+    thumbURL: 'https://source.unsplash.com/random/350x160',
     title: 'Atualização aplicações React Native para a última versao',
     description:
       'Atualização aplicações React Native para a última versao Atualização aplicações React',
@@ -31,7 +31,7 @@ export const fakeData = [
   },
   {
     id: 4,
-    thumbURL: '/img/350x160.png',
+    thumbURL: 'https://source.unsplash.com/random/350x160',
     title: 'Atualização aplicações React Native para a última versao',
     description:
       'Atualização aplicações React Native para a última versao Atualização aplicações React',
@@ -41,7 +41,7 @@ export const fakeData = [
   },
   {
     id: 5,
-    thumbURL: '/img/350x160.png',
+    thumbURL: 'https://source.unsplash.com/random/350x160',
     title: 'Atualização aplicações React Native para a última versao',
     description:
       'Atualização aplicações React Native para a última versao Atualização aplicações React Atualização aplicações React Native para a última versao Atualização aplicações React',

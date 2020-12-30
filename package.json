@@ -10,7 +10,7 @@
     "lint": "eslint src --max-warnings=0",
     "test": "jest --bail --verbose --coverage",
     "test:snapshots": "npm run test -- --updateSnapshot",
-    "test:watch": "npm run test -- --watch",
+    "test:watch": "npm run test -- --watch --coverage=false",
     "generate": "plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook -s ./public"

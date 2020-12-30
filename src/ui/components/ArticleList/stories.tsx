@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import ArticleList from '.';
 import ArticleListItem from '../ArticleListItem';
 
-import { fakeData } from './fakeData';
+import { fakeData } from './data.fake';
 
 export default {
   title: 'Articles/ArticleList',

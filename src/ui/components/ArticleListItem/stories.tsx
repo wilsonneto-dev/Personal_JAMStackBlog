@@ -13,7 +13,7 @@ export default {
 export const Default = Template.bind({});
 
 Default.args = {
-  thumbURL: '/img/article-thumb.png',
+  thumbURL: 'https://source.unsplash.com/random/350x160',
   title: 'Atualização aplicações React Native para a última versao',
   description:
     'Atualização aplicações React Native para a última versao Atualização aplicações React',

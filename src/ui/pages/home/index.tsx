@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import ArticleList from 'ui/components/ArticleList';
 import ArticleListItem from 'ui/components/ArticleListItem';
-import { fakeData } from 'ui/components/ArticleList/fakeData';
+import { fakeData } from 'ui/components/ArticleList/data.fake';
 
 const Home = () => (
   <ArticleList>

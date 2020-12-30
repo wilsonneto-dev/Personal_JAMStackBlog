@@ -19,11 +19,7 @@ describe('<ArticleListItem />', () => {
   it('should render the heading, text and footer', () => {
     renderWithTheme(<ArticleListItem {...exampleData} />);
 
-    expect(
-      screen.getByText(
-        'Atualização aplicações React Native para a última versao'
-      )
-    ).toBeInTheDocument();
+    expect(screen.getByText(exampleData.title)).toBeInTheDocument();
 
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(screen.getAllByRole('link').length).toBeGreaterThan(0);
